@@ -8,7 +8,7 @@
 <img src="./docs/block_diagram.svg" width="200"> <img src="./docs/tstat_part_description.svg" width="300"> <img src="./docs/furnace_part_description.svg" width="300">
 
 ## HW setup ESP-01s
-ESP-01s is using ESP8266 microcontroller.
+ESP-01s is using ESP8266 microcontroller. [There](./docs/Esp-01s_datasheet_chinese.pdf) is chinese datasheet with schematics.
 
 <img src="./docs/esp-01s-esp8266-wifi-module.jpg"  width="300"> <img src="./docs/ESP8266-PINOUT.png"  width="250"> <img src="./docs/serial_port.svg"  width="300">
 
