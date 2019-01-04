@@ -26,3 +26,7 @@ Clone [makeEspArduino](https://github.com/plerup/makeEspArduino) to $HOME direct
 Command for build and flash:
 
 ``` make -f ~/makeEspArduino/makeEspArduino.mk UPLOAD_SPEED=921600 flash ```
+
+## Relay module
+
+[Schematics](./docs/ESP-01S_Relay_v4_0.pdf)
