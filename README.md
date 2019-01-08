@@ -30,3 +30,9 @@ Command for build and flash:
 ## Relay module
 
 [Schematics](./docs/ESP-01S_Relay_v4_0.pdf)
+
+## ESP32 DEVKIT V1
+
+[Schematics](./docs/esp32_Schematic_Prints.pdf)
+
+[Pinout](./docs/pinoutDOIT32DevkitV1.pdf)

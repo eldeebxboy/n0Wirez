@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="185.83247"
-     inkscape:cy="311.83032"
+     inkscape:cx="48.691411"
+     inkscape:cy="303.09788"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,15 +38,16 @@
      inkscape:snap-grids="false"
      inkscape:bbox-nodes="true"
      inkscape:bbox-paths="true"
-     inkscape:window-width="1857"
-     inkscape:window-height="1025"
-     inkscape:window-x="63"
-     inkscape:window-y="27"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0">
+     fit-margin-bottom="0"
+     inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
        id="grid831"
@@ -61,7 +62,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -221,8 +222,8 @@
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect901"
-       width="36.777096"
-       height="29.897921"
+       width="51.209648"
+       height="29.36338"
        x="76.729149"
        y="66.8125" />
     <text
@@ -230,52 +231,52 @@
        inkscape:transform-center-x="-5.3453895"
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="94.873909"
-       y="63.073704"
+       x="101.77197"
+       y="62.790222"
        id="text905"><tspan
          sodipodi:role="line"
-         x="94.873909"
-         y="68.468719"
+         x="101.77197"
+         y="68.185234"
          style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
          id="tspan907" /><tspan
          sodipodi:role="line"
-         x="94.873909"
-         y="73.760391"
+         x="101.77197"
+         y="73.476906"
          style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
          id="tspan911">Adaptor</tspan><tspan
          sodipodi:role="line"
-         x="94.873909"
-         y="79.107178"
+         x="101.77197"
+         y="78.823692"
          style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
          id="tspan913">board</tspan><tspan
          sodipodi:role="line"
-         x="94.873909"
-         y="84.453964"
+         x="101.77197"
+         y="84.170479"
          style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
          id="tspan915" /></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:1.5874999, 0.26458332;stroke-dashoffset:0;stroke-opacity:1"
        id="rect921"
-       width="34.395832"
-       height="13.229156"
+       width="48.739452"
+       height="12.713612"
        x="77.787506"
        y="82.15834" />
     <text
        id="text939"
-       y="87.952713"
-       x="94.842354"
+       y="87.763725"
+       x="102.40188"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"
        inkscape:transform-center-x="-5.3453895"
        inkscape:transform-center-y="0.53454042"><tspan
          id="tspan937"
          style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
-         y="87.952713"
-         x="94.842354"
-         sodipodi:role="line">ESP-01s wifi</tspan><tspan
+         y="87.763725"
+         x="102.40188"
+         sodipodi:role="line">ESP32 devkit V1</tspan><tspan
          style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
-         y="93.2995"
-         x="94.842354"
+         y="93.110512"
+         x="102.40188"
          sodipodi:role="line"
          id="tspan950">module</tspan></text>
     <rect
@@ -383,43 +384,6 @@
          id="tspan1036"
          sodipodi:role="line">Thermostat side</tspan></text>
     <rect
-       y="84.75692"
-       x="21.166666"
-       height="11.906253"
-       width="38.100006"
-       id="rect1040"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       id="text1050"
-       y="89.637573"
-       x="39.71233"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"
-       inkscape:transform-center-x="-5.3453895"
-       inkscape:transform-center-y="0.53454042"><tspan
-         id="tspan1048"
-         style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
-         y="89.637573"
-         x="39.71233"
-         sodipodi:role="line">5VDC power</tspan><tspan
-         style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
-         y="94.98436"
-         x="39.71233"
-         sodipodi:role="line"
-         id="tspan1061">brick</tspan></text>
-    <path
-       inkscape:connector-curvature="0"
-       id="path1063"
-       d="M 58.208334,87.979166 H 79.375"
-       style="fill:#0000ff;stroke:#0000ff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:#0000ff;stroke:#0000ff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 58.208333,93.270833 H 79.375"
-       id="path1065"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect1067"
        width="38.100006"
@@ -488,5 +452,17 @@
          y="166.24426"
          style="font-size:4.93888903px;line-height:0.5;text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.26458332"
          id="tspan1094">Relay</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path892"
+       d="m 73.658118,68.46616 0,-22.86758"
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 78.041005,68.330141 -4.512111,0"
+       id="path894"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
