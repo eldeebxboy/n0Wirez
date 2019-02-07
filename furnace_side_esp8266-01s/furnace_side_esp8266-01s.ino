@@ -4,7 +4,7 @@
 #include <Ticker.h>
 
 #define LED 2 // blue led
-#define RELAY0 0 // heater relay
+#define RELAY 0 // heater relay
 
 #define STR_BUF_LEN 30 // number of characters in buffer
 
@@ -21,7 +21,7 @@ WiFiServer server(80);
 String header;
 
 // Auxiliar variables to store the current output state
-String ledState = "off";
+String relayState = "off";
 
 bool menu = 1;
 
@@ -72,6 +72,14 @@ void print_eeprom() {
 }
 
 void setup() {
+
+    // Initialize the output variables as outputs  
+    pinMode(LED, OUTPUT);
+    pinMode(RELAY, OUTPUT);
+
+    digitalWrite(LED, HIGH);
+    digitalWrite(RELAY, HIGH);
+
     Serial.begin(115200);
     Serial.println("");
     Serial.println("Serial initialised");
@@ -87,7 +95,7 @@ void setup() {
 
     // Enter masterpwd for setup menu
     Serial.printf("\n\rPassword?\n\r");
-    waiter.attach(2, now); // two seconds to do that
+    waiter.attach(5, now); // two seconds to do that
 
     // Weak implementation of user menu
     char c;
@@ -188,12 +196,6 @@ void setup() {
         print_eeprom();
     }
 
-    // Initialize the output variables as outputs  
-    pinMode(LED, OUTPUT);
-
-    // Set outputs to LOW
-    digitalWrite(LED, LOW);
-
     server.begin();
 
     // Start accesspoint with SSID and password
@@ -237,14 +239,16 @@ void loop(){
                         client.println();
 
                         // turns the GPIOs on and off
-                        if (header.indexOf("GET /LED/on") >= 0) {
-                            Serial.println("LED on");
-                            ledState = "on";
+                        if (header.indexOf("GET /relay/on") >= 0) {
+                            Serial.println("Relay ON");
+                            relayState = "ON";
                             digitalWrite(LED, LOW);
-                        } else if (header.indexOf("GET /LED/off") >= 0) {
-                            Serial.println("LED off");
-                            ledState = "off";
+                            digitalWrite(RELAY, LOW);
+                        } else if (header.indexOf("GET /relay/off") >= 0) {
+                            Serial.println("Relay OFF");
+                            relayState = "OFF";
                             digitalWrite(LED, HIGH);
+                            digitalWrite(RELAY, HIGH);
                         }
 
                         // Display the HTML web page
@@ -256,19 +260,22 @@ void loop(){
                         client.println("<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}");
                         client.println(".button { background-color: #195B6A; border: none; color: white; padding: 16px 40px;");
                         client.println("text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}");
+                        client.println(".button3 { background-color: #65f442;}");
                         client.println(".button2 {background-color: #77878A;}</style></head>");
 
                         // Web Page Heading
                         client.println("<body><h1>Tstat Web Server</h1>");
 
                         // Display current state, and ON/OFF buttons for GPIO 5  
-                        client.println("<p>LED - State " + ledState + "</p>");
-                        // If the ledState is off, it displays the ON button       
-                        if (ledState=="off") {
-                            client.println("<p><a href=\"/LED/on\"><button class=\"button\">ON</button></a></p>");
+                        client.println("<p >RELAY - State " + relayState + "</p>");
+                        // If the relayState is off, it displays the ON button       
+                        if (relayState=="OFF") {
+                            client.println("<p style=\"font-size:30px;\"><a href=\"/relay/on\"><button class=\"button\">Turn ON</button></a></p>");
                         } else {
-                            client.println("<p><a href=\"/LED/off\"><button class=\"button button2\">OFF</button></a></p>");
+                            client.println("<p style=\"font-size:30px;\"><a href=\"/relay/off\"><button class=\"button button2\">Turn OFF</button></a></p>");
                         } 
+                        
+                        client.println("<p style=\"font-size:30px;\"><a href=\".\"><button class=\"button button3\">Refresh</button></a></p>");
 
                         client.println("</body></html>");
 
